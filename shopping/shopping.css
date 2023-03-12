@@ -1,0 +1,118 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #ced3df;
+}
+
+ul, ol {
+  list-style: none;
+  padding: 0;
+}
+
+input {
+  outline: none;
+  border: none;
+  padding: 0;
+}
+
+button {
+  outline: none;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.shopping-container {
+  width: 400px;
+  margin: 80px auto;
+  border-radius: 20px;
+}
+
+.header {
+  text-align: center;
+  margin: 0;
+  padding: 20px 0;
+  box-sizing: border-box;
+  background: rgb(237,193,211);
+  background: linear-gradient(
+    166deg, 
+    rgba(237, 193, 211, 1) 0%, 
+    rgba(219, 192, 216, 1) 35%, 
+    rgba(127, 188, 242, 1) 100%
+  );  
+  border-radius: 20px 20px 0 0;
+  color: white;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.items {
+  height: 500px;
+  overflow-y: auto;
+  background: rgb(243, 243, 243);
+  margin: 0;
+  padding: 0;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 32px;
+  box-sizing: border-box;
+}
+
+.item__divider {
+  width: 90%;
+  height: 1px;
+  background: lightgrey;
+  margin: auto;
+}
+
+.item__delete {
+  width: 30px;
+  height: 30px;
+  transition: all 300ms ease-in;
+  font-size: 16px;
+}
+
+.delete:hover {
+  color: red;
+  transform: scale(1.1);
+}
+
+.footer {
+  background: rgb(237,193,211);
+  background: linear-gradient(
+    166deg, 
+    rgba(237, 193, 211, 1) 0%, 
+    rgba(219, 192, 216, 1) 35%, 
+    rgba(127, 188, 242, 1) 100%
+  );
+  border-radius: 0 0 20px 20px;
+  text-align: center;
+}
+
+.footer__input {
+  box-sizing: border-box;
+  width: 100%;
+  height: 32px;
+  padding: 8px 20px;
+  box-sizing: border-box;
+  font-size: 20px;
+}
+
+.footer__add { 
+  line-height: 45px;
+  font-size: 28px;
+  width: 48px;
+  height: 48px;
+  background: white;
+  color: black;
+  border-radius: 50%;
+  transition: all 300ms ease-in;
+}
+
+.footer__add:hover {
+  transform: rotate(180deg);
+}
